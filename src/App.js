@@ -3,6 +3,10 @@ import './App.css';
 import sketch from './sketch';
 import p5 from 'p5';
 
+import Header from './components/Header';
+import Cake from './components/Cake';
+import Gifts from './components/Gifts';
+
 const TEXT = 'Happy Birthday Dad';
 
 const App = () => {
@@ -17,9 +21,14 @@ const App = () => {
   })
 
   return (
+    <>
     <div className="main">
       <div ref={canvasRef} />
     </div >
+//       <Cake />
+      <Header />
+//       <Gifts />
+  </>
   )
 }
 
